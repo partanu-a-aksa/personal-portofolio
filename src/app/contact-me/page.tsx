@@ -1,4 +1,5 @@
 import { Navbar } from "@/component/navbar";
+import Image from "next/image";
 
 export default function ContactForm() {
   return (
@@ -70,17 +71,27 @@ export default function ContactForm() {
           </button>
         </form>
       </div>
-
       <br />
       <div className="flex flex-row gap-2">
         <a href="https://github.com/partanu-a-aksa">
-          <img src="/Images/linkedin.png" alt="" className="w-[60px]" />
+          <Image
+            src="/Images/githubicon.png"
+            alt="LinkedIn"
+            width={60}
+            height={60}
+            className="w-[60px] h-auto"
+          />
         </a>
         <a href="https://www.linkedin.com/in/partanu-ardi-aksa-2b460b66/">
-          <img src="/Images/githubicon.png" alt="" className="w-[60px]" />
+          <Image
+            src="/Images/linkedin.png"
+            alt="GitHub"
+            width={60}
+            height={60}
+            className="w-[60px] h-auto"
+          />
         </a>
       </div>
-
       <br />
       <Navbar></Navbar>
     </section>

@@ -1,79 +1,106 @@
+"use client";
 import { Navbar } from "@/component/navbar";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Services() {
+export default function Portfolio() {
   return (
-    <div
-      id="services"
-      className="flex-col flex min-h-screen justify-center items-center w-full bg-gradient-to-br from-[#1d1e1e] via-[#313235] to-[#a6a6a9] text-white px-4 "
-    >
-      <p className="font-extrabold text-7xl p-4 mb-2">
+    <div className="flex flex-col min-h-screen justify-center items-center w-full bg-gradient-to-br from-[#1d1e1e] via-[#373738] to-[#a6a6a9] text-white px-6 py-20 gap-10">
+      <h1 className="text-[48px] font-[1000]">
         Featured{" "}
-        <span
-          className="bg-clip-text text-transparent bg-gradient-to-r from-gray-600 to-gray-500 hover:from-gray-700 hover:to-gray-400 transition-all duration-300 cursor-pointer
-           hover:[text-shadow:0_0_5px_#fef3c7,0_0_10px_#fef3c7,0_0_20px_#fef3c7]"
-        >
+        <span className="text-[48px] font-[1000] text-slate-600 hover:[text-shadow:0_0_5px_#fef3c7,0_0_10px_#fef3c7,0_0_20px_#fef3c7] transition-all">
           Projects
         </span>
-      </p>
+      </h1>
 
-      <div className="gap-6 md:justify-center md:items-center md:gap-6 grid grid-cols-1 grid-rows-2 md:w-2/3 lg:w-3/4 mb-6">
-        <div className="flex flex-col lg:flex-row justify-center items-center rounded-2xl gap-4 bg-gradient-to-r from-gray-600 to-gray-500 hover:from-gray-700 hover:to-gray-400 text-white font-semibold shadow-md">
-          <img src="/Images/rsintanhusada.png" alt="" className="w-[400px]" />
-          <div>
-            <h2 className="text-[24px]">Landing Page for local Hospital</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              sint, repudiandae similique accusamus doloribus veritatis
-              eligendi! Ipsum sed beatae debitis expedita nobis, voluptatibus
-              nemo blanditiis quaerat voluptas accusantium tempora distinctio?
-            </p>
-            <Link href="https://www.google.com/" className=" text-[#D3E97A]">
-              Live Demo
-            </Link>
-            <div></div>
-            <Link href="https://www.google.com/" className=" text-[#D3E97A]">
-              See on Github ↗️
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center rounded-2xl gap-4 bg-gradient-to-r from-gray-600 to-gray-500 hover:from-gray-700 hover:to-gray-400 text-white font-semibold shadow-md">
-          <img src="/Images/klinikmitra.png" alt="" className="w-[400px]" />
-          <div>
-            <h2 className="text-[24px]">Simple Web for local Small Clinic</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              sint, repudiandae similique accusamus doloribus veritatis
-              eligendi! Ipsum sed beatae debitis expedita nobis, voluptatibus
-              nemo blanditiis quaerat voluptas accusantium tempora distinctio?
-            </p>
-
-            <Link href="https://www.google.com/" className=" text-[#D3E97A]">
-              See on Github ↗️
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center rounded-2xl gap-4 bg-gradient-to-r from-gray-600 to-gray-500 hover:from-gray-700 hover:to-gray-400 text-white font-semibold shadow-md">
-          <img src="/Images/labdiatest.png" alt="" className="w-[400px]" />
-          <div>
-            <h2 className="text-[24px]">
-              Simple Landing template for local Clinical Laboratory
+      <div className="flex flex-col gap-10 items-center w-full max-w-5xl">
+        {/* RS Intan Husada nyomot */}
+        <Link
+          href="/portofolio/rs-intan-husada"
+          className="flex flex-col lg:flex-row items-center gap-6 bg-white/5 backdrop-blur-md border border-gray-500/30 hover:border-gray-400 p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 w-full"
+        >
+          <Image
+            src="/Images/rsintanhusada.png"
+            alt="RS Intan Husada"
+            width={400}
+            height={250}
+            className="rounded-lg object-cover"
+          />
+          <div className="flex flex-col gap-3 w-full">
+            <h2 className="text-xl font-semibold">
+              Landing Page for RS Intan Husada
             </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              sint, repudiandae similique accusamus doloribus veritatis
-              eligendi! Ipsum sed beatae debitis expedita nobis, voluptatibus
-              nemo blanditiis quaerat voluptas accusantium tempora distinctio?
+            <p className="text-sm text-gray-200 leading-relaxed line-clamp-4">
+              A responsive and professional landing page for a local hospital,
+              built to highlight key medical services and facilities clearly.
             </p>
-
-            <Link href="https://www.google.com/" className=" text-[#D3E97A]">
-              See on Github ↗️
-            </Link>
+            <div className="flex flex-wrap gap-3 mt-2">
+              <span className="bg-[#D3E97A] text-black px-4 py-2 rounded-lg font-medium">
+                View Details
+              </span>
+            </div>
           </div>
-        </div>
+        </Link>
+
+        {/* Lab Diatest */}
+        <Link
+          href="/portofolio/lab-diatest"
+          className="flex flex-col lg:flex-row items-center gap-6 bg-white/5 backdrop-blur-md border border-gray-500/30 hover:border-gray-400 p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 w-full"
+        >
+          <Image
+            src="/Images/labdiatestweb.png"
+            alt="Lab Diatest"
+            width={400}
+            height={250}
+            className="rounded-lg object-cover"
+          />
+          <div className="flex flex-col gap-3 w-full">
+            <h2 className="text-xl font-semibold">
+              Landing Page for Lab Diatest
+            </h2>
+            <p className="text-sm text-gray-200 leading-relaxed line-clamp-4">
+              A clean and clear landing page for a clinical laboratory, designed
+              for accessibility, speed, and client trust.
+            </p>
+            <div className="flex flex-wrap gap-3 mt-2">
+              <span className="bg-[#D3E97A] text-black px-4 py-2 rounded-lg font-medium">
+                View Details
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        {/* Template cuy */}
+        <Link
+          href="/contact-me"
+          className="flex flex-col lg:flex-row items-center gap-6 bg-white/5 backdrop-blur-md border border-gray-500/30 hover:border-gray-400 p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 w-full"
+        >
+          <Image
+            src="/Images/klinikmitra.png"
+            alt="Lab Diatest"
+            width={400}
+            height={250}
+            className="rounded-lg object-cover"
+          />
+          <div className="flex flex-col gap-3 w-full">
+            <h2 className="text-xl font-semibold">
+              Simple Web for small clinic
+            </h2>
+            <p className="text-sm text-gray-200 leading-relaxed line-clamp-4">
+              A clean and clear landing page template for a local clinic.
+            </p>
+            <div className="flex flex-wrap gap-3 mt-2">
+              <span className="bg-[#D3E97A] text-black px-4 py-2 rounded-lg font-medium">
+                Ask me for this template
+              </span>
+            </div>
+          </div>
+        </Link>
       </div>
-      <Navbar />
+
+      <div className="mt-6">
+        <Navbar />
+      </div>
     </div>
   );
 }
