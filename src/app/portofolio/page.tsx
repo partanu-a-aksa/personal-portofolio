@@ -12,15 +12,14 @@ export default function Portfolio() {
           Projects
         </span>
       </h1>
-
+      {/* Eventura disini */}
       <div className="flex flex-col gap-10 items-center w-full max-w-5xl">
-        {/* RS Intan Husada nyomot */}
         <Link
-          href="/portofolio/rs-intan-husada"
+          href="/portofolio/eventura"
           className="flex flex-col lg:flex-row items-center gap-6 bg-white/5 backdrop-blur-md border border-gray-500/30 hover:border-gray-400 p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 w-full"
         >
           <Image
-            src="/Images/rsintanhusada.png"
+            src="/Images/eventura-hero.png"
             alt="RS Intan Husada"
             width={400}
             height={250}
@@ -28,11 +27,11 @@ export default function Portfolio() {
           />
           <div className="flex flex-col gap-3 w-full">
             <h2 className="text-xl font-semibold">
-              Landing Page for RS Intan Husada
+              Event Organizer website: Eventura
             </h2>
             <p className="text-sm text-gray-200 leading-relaxed line-clamp-4">
-              A responsive and professional landing page for a local hospital,
-              built to highlight key medical services and facilities clearly.
+              A responsive and professional landing page for an event organizer,
+              built to highlighting fullstack development skills.
             </p>
             <div className="flex flex-wrap gap-3 mt-2">
               <span className="bg-[#D3E97A] text-black px-4 py-2 rounded-lg font-medium">

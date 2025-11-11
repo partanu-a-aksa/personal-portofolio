@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <p className="text-lg leading-relaxed">
-            Currently, I’m exploring NextJs, Backend and a bit of Designing.
+            Currently, Im exploring NextJs, Backend and a bit of Designing.
             While I am not programming, I did family business, managing staffs
             and playing videogames. Learning more to improve skill.
           </p>
@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center gap-10">
           <Image
-            src="/Images/rsintanhusada.png"
+            src="/Images/eventura-hero.png"
             alt="Project 1"
             width={400}
             height={250}
